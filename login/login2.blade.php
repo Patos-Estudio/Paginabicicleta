@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoginBici</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="style_login.css">
-    <link rel="stylesheet" href="style_upload.css">
+    <link href="{{ asset('style_login.css') }}" rel="stylesheet">
+    <link href="{{ asset('style_upload.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swamp">
 </head>
@@ -17,7 +17,7 @@
     </header>
     <form action="" method="post" id="form">
         <div class="form">
-            <img id="imga"src=".\imagenes_in\img3.jpg" alt="">
+            <img id="imga"src="{{ asset('imagenes/login/img3.jpg') }}" alt="">
             <br>
             <h4>Parte delantera de la cédula</h4>
             <div class="container">
@@ -68,7 +68,6 @@
                 <button onclick="defaultBtnActive()" class="custom-btn">Sube el archivo</button>
                 <input id="default-btn" type="file" hidden>
              </div>
-
                 <section class="area-subida"></section>
             </div>
             <br>

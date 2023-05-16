@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BiciManizales</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="style_bici.css">
+    <link href="{{ asset('style_bici.css') }}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ff337f31f7.js" crossorigin="anonymous"></script>
   </head>
 <body>
     <header>
         <a href="#" class="logo">
-            <img src="imagenes_in/logo.jpg" alt="logo de la compañia" class="logo-img">
+            <img src="{{ asset('imagenes/inicio/logo.jpg') }}" alt="logo de la compañia" class="logo-img">
             <h2 class="nombre-empresa">Biciya</h2>
         </a>
         <nav>
@@ -27,10 +27,10 @@
     <section class="container">
         <div class="slider-wrapper">
             <div class="slider">
-                <img id="slider1"src="imagenes_in/img1.jpg" alt="">
-                <img id="slider2"src="imagenes_in/img2.jpg" alt="">
-                <img id="slider3"src="imagenes_in/img3.jpg" alt="">
-                <img id="slider4"src="imagenes_in/img4.jpg" alt="">
+                <img id="slider1"src="{{ asset('imagenes/inicio/img1.jpg') }}" alt="">
+                <img id="slider1"src="{{ asset('imagenes/inicio/img2.jpg') }}" alt="">
+                <img id="slider1"src="{{ asset('imagenes/inicio/img3.jpg') }}" alt="">
+                <img id="slider1"src="{{ asset('imagenes/inicio/img4.jpg') }}" alt="">
             </div>
             <div class="slider-nav">
                 <a href="#slider1" class=""></a>
@@ -44,7 +44,7 @@
 
     <section class="contenedor-conocenos">
         <div class="contenedor-nosotros">
-            <img src="imagenes_in/imag1.jpg" alt="" class="imagen-conocenos" id="cambio">
+            <img src="{{ asset('imagenes/inicio/imag1.jpg') }}" alt="" class="imagen-conocenos" id="cambio">
             <div class="textos">
                 <h1 class="titulo">Conocenos</h1>
                 <p>Somos un servicio  brindado por la alcaldia de Manizales para dar un medio de transporte
@@ -69,7 +69,7 @@
 
                 </p>
             </div>
-            <img src="imagenes_in/imag2.jpg" alt="" class="imagen-conocenos">
+            <img src="{{ asset('imagenes/inicio/imag2.jpg') }}" alt="" class="imagen-conocenos">
         </div>
     </section>
 
@@ -83,21 +83,21 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="imagenes_in/not4.jpg" class="d-block w-70" alt="...">
+                    <img src="{{ asset('imagenes/inicio/not4.jpg') }}" class="d-block w-70" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Una ciudad al futuro</h5>
                       <p>Conozca los proyectos que actualmente se encuentran en marcha en la ciudad.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="imagenes_in/not5.jpg" class="d-block w-70" alt="">
+                    <img src="{{ asset('imagenes/inicio/not5.jpg') }}" class="d-block w-70" alt="">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Manizales: Ciudad universitaria</h5>
                       <p>Manizales es la ciudad conocida como la ciudad universitaria con alrededor de 50.000 Estudiantes.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="imagenes_in/not6.jpg" class="d-block w-70" alt="...">
+                    <img src="{{ asset('imagenes/inicio/not6.jpg') }}" class="d-block w-70" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Manizales hoy</h5>
                       <p>Conozca las noticias mas actualizadas sobre lo que pasa hoy en la ciudad</p>
@@ -142,7 +142,7 @@
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="imagenes_in/logo.jpg" alt="Logo de la empresa">
+                        <img src="{{ asset('imagenes/inicio/logo.jpg') }}" alt="Logo de la empresa">
                     </a>
                 </figure>
             </div>
@@ -156,7 +156,7 @@
 
 
 
-    <script src="bici.js"></script>
+    <script src="{{ asset('bici.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

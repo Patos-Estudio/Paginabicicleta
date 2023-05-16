@@ -5,23 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body >
     <header>
         <a href="#" class="logo">
-            <img src="img/logo.jpg" alt="logo de la compañia" class="logo-img">
+            <img src="{{ asset('imagenes/acceso/logo.jpg') }}" alt="logo de la compañia" class="logo-img">
             <h2 class="nombre-empresa">Biciya</h2>
         </a>
         <a href="#" class="inicio" onclick="home()">
-            <img src="img/casita.png" alt="casita para ir al inicio" class="inicio-img">
+            <img src="{{ asset('imagenes/acceso/casita.png') }}" alt="casita para ir al inicio" class="inicio-img">
         </a>
     </header>
 <section class="contenedor-historial" id="contenedor-historial">   
     <div class="content" id="nivel">
         <div class="content" id="numero"></div>
         <h4>Bienvenido...</h4>
-        <img src="img/perfil.png" id="perfil">
+        <img src="{{ asset('imagenes/acceso/perfil.png') }}" id="perfil">
         <h3 id="nivel">MI NIVEL:</h3>
         <h3 id="estado">ESTADO:</h3>
         <h2 id="ac">ACTIVO</h2>

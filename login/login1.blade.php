@@ -16,7 +16,7 @@
     </header>
     <form action="" method="post" id="form">
         <div class="form">
-            <img id="imga"src=".\imagenes_in\img4.jpg" alt="">
+            <img id="imga"src="{{ asset('imagenes/login/img4.jpg') }}" alt="">
             <div class="grupo">
                 <input type="email" name="" id="email" required><span class="barra"></span>
                 <label for="">Email</label>
@@ -27,23 +27,23 @@
             </div>
             <div class="accesos">
                 <a href="https://accounts.google.com/login?hl=es" target="_blank">
-                    <img src="imagenes_in/gmail_Logo.png" alt="">
+                    <img src="{{ asset('imagenes/login/gmail_Logo.png') }}" alt="">
                 </a>
                 <a href="https://es-la.facebook.com/login/device-based/regular/login/" target="_blank">
-                    <img src="imagenes_in/Facebook_logo.jpg" alt="">
+                    <img src="{{ asset('imagenes/login/Facebook_logo.jpg') }}" alt="">
                 </a>
             </div>
 
             <button onclick="acceso()" type="submit" class="regi">Iniciar sesión</button>
 
             
-            <p>Si aún no tienes cuenta <a href="login.html" style="text-decoration: none;">¡REGISTRATE!</a>.</p>
+            <p>Si aún no tienes cuenta <a href="usuarios" style="text-decoration: none;">¡REGISTRATE!</a>.</p>
 
         </div>
     </form>
 
 
-    <script src="bici.js"></script>
+    <script src="{{ asset('bici.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> 
 </body>
 </html>
